@@ -1,0 +1,6 @@
+<div class="ui segments">
+  <div class="ui segment" *ngFor="let task of tasks">
+    <p (click)="toggleComplete(task)" [class.completed]="task.completed===true">{{task.taskName}}</p>
+  </div>
+</div>
+<button class="ui button primary" (click)="clearCompleted()">Clear Completed</button>

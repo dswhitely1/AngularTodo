@@ -1,0 +1,9 @@
+<form class="ui fluid form">
+  <div class="field">
+    <label>
+      New Task
+      <input type="text" #taskName placeholder="Enter Task Name...">
+    </label>
+    <button class="ui button primary" type="submit" (click)="onHandleAddTask($event)">Submit</button>
+  </div>
+</form>
